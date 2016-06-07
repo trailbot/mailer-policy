@@ -1,0 +1,7 @@
+{
+  "name": "policy-mailer",
+  "version": "0.0.1",
+  "dependencies": {
+    "email": "0.2.6"
+  }
+}
