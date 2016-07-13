@@ -4,4 +4,15 @@
   "dependencies": {
     "email": "0.2.6"
   }
+  "policy": {
+    "language": "coffee",
+    "params": {
+      "from": {
+        "type": "email"
+      },
+      "to": {
+        "type": "email"
+      }
+    }
+  }
 }
