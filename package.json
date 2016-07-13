@@ -5,7 +5,7 @@
     "email": "0.2.6"
   },
   "policy": {
-    "language": "coffee",
+    "language": "coffeescript",
     "params": {
       "from": {
         "type": "email",
