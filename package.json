@@ -12,7 +12,7 @@
         "label": "Sender address"
       },
       "to": {
-        "type": "email"
+        "type": "email",
         "label": "Recipient address"
       }
     }
