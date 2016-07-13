@@ -8,10 +8,12 @@
     "language": "coffee",
     "params": {
       "from": {
-        "type": "email"
+        "type": "email",
+        "label": "Sender address"
       },
       "to": {
         "type": "email"
+        "label": "Recipient address"
       }
     }
   }
