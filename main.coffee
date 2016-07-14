@@ -2,7 +2,7 @@ Email = require('email').Email
 
 class Mailer
   constructor : (params) ->
-    @file = params.filename
+    @file = params.path
     @from = params.from
     @to = params.to
     console.log "Started Mailer!"
