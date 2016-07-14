@@ -11,8 +11,8 @@ class Mailer
     msg = new Email
       from: @from
       to: @to
-      subject: "File \"#{@file}\" has been modified"
-      body: "File \"#{@file}\" has been modified.\nThe changes are:\n" + @format changes
+      subject: "File #{@file} has been modified"
+      body: "File #{@file} has been modified.\nThe changes are:\n\n" + @format changes
     msg.send (err) ->
       console.log 'ERROR:', err if err
 
