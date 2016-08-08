@@ -5,22 +5,22 @@ class Mailer
     @file = params.path
     @from = params.from
     @to = params.to
-    console.log "Started Mailer!"
+    console.log "Ready!"
 
-  receiver : (changes) =>
+  receiver : ({diff}) =>
     msg = new Email
       from: @from
       to: @to
       subject: "File #{@file} has been modified"
-      body: "File #{@file} has been modified.\nThe changes are:\n\n" + @format changes
+      body: "File #{@file} has been modified.\nThe changes are:\n\n" + @format diff
     msg.send (err) ->
       console.log 'ERROR:', err if err
 
-  format : (changes) ->
+  format : (diff) ->
     string = ""
     aOffset = 0
     rOffset = 0
-    for change in changes
+    for change in diff
       line = ""
       if change.type is 'ellipsis'
         line += "[#{change.size} omitted lines]\n"

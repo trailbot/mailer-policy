@@ -1,20 +1,28 @@
 {
   "name": "policy-mailer",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "dependencies": {
     "email": "0.2.6"
   },
+  "repository": "https://github.com/trailbot/mailer-policy",
+  "license": "MIT",
   "policy": {
     "language": "coffeescript",
+    "forbid": "/\/var\/log\/(syslog|mail)/g",
     "params": {
       "from": {
         "type": "email",
-        "label": "Sender address"
+        "label": "Sender address",
+        "required": true,
+        "tip": "This email address will appear as sender."
       },
       "to": {
         "type": "email",
-        "label": "Recipient address"
+        "label": "Recipient address(es)",
+        "required": true,
+        "tip": "You can also send the email to multiple comma-separated recipients."
       }
-    }
+    },
+    "defaultName": "Email notifications"
   }
 }
