@@ -1,8 +1,8 @@
 {
-  "name": "policy-mailer",
-  "version": "0.1.0",
+  "name": "mailer-policy",
+  "version": "0.1.1",
   "dependencies": {
-    "email": "0.2.6"
+    "email": "^0.2.6"
   },
   "repository": "https://github.com/trailbot/mailer-policy",
   "license": "MIT",
